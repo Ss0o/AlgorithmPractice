@@ -45,3 +45,12 @@ public class MergeSort {
         printArray(arr);
     }
 }
+/*
+    실행 흐름
+    mergeSort함수에서 임시저장공간 tmp를 만들고 오버로딩한 mergeSort함수 재호출
+    오버로딩한 mergeSort함수는 재귀를 통해 반으로 분할(log n) 후 병합하는 함수 merge호출
+    병합하는 함수 merge에서는 임시저장공간에 값을 복사해넣고
+    왼쪽 partition과 오른쪽 partition을 비교할 인덱스 part1, part2 설정(part1 = start, part2 = mid + 1)
+    비교 후 arr에 index에 순서대로 넣음(index = start)
+
+ */
